@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viral Trailer</title>
+
+    <!-- Swipper Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Bootsrap CSS File -->
+    <link rel="stylesheet" href="./assets/css/bootsrap.css">
+    <!-- Style CSS File -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Media CSS File  -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container-lg">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="d-flex align-items-center gap-5">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./assets/images/WhatsApp_Image_2025-03-01_at_13.39.26_b4e8e417-removebg-preview (1).png"
+                            alt="logo" width="170px" height="60px">
+                        </a>
+                    </div>
+                    <ul class="menus m-0 p-0 d-xl-flex d-none gap-5 align-items-center">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about-us.html">About us</a></li>
+                        <li><a href="./service.html">Our Services</a></li>
+                        <li><a href="./contect-us.html">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                    <a href="./contect-us.html">
+                        <button class="get-btn d-sm-block d-none">
+                        Get a quote
+                        </button>
+                    </a>
+                    <button class="menu-btn d-xl-none d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Main-Section -->
+        <section>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="main-banner">
+                            <div class="container-lg">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="main-heading">
+                                            <div>
+                                                <h1 class="h1">Viral Trailer</h1>
+                                                <p class="mt-3">Manufacturer of tractor trailers, threshers and <br />
+                                                    agricultural implements</p>
+                                                <a href="./about-us.html" class="explore-btn mt-4 d-inline-block">
+                                                    Explore More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="main-banner main-banner2">
+                            <div class="container-lg">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="main-heading">
+                                            <div>
+                                                <h1 class="h1">Viral Trailer</h1>
+                                                <p class="mt-3">Providing flexibile, improved service levels, and
+                                                    delivery.</p>
+                                                <a href="./about-us.html" class="explore-btn mt-4 d-inline-block">
+                                                    Explore More
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Header Offcanvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="ri-close-large-line"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="off-menus p-0">
+                <li><a href="javascript void(0);">Home</a></li>
+                <li><a href="javascript void(0);">About us</a></li>
+                <li><a href="javascript void(0);">Our Services</a></li>
+                <li><a href="javascript void(0);">Latest Blog</a></li>
+                <li><a href="javascript void(0);">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootsrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 3000, // Auto-slide every 3 seconds
+                disableOnInteraction: false,
+            },
+            loop: true,
+        });
+
+        $(document).ready(function() {
+            // $(".menus li a").on("click", function(){
+            //     $clicked = $(this)
+            //     $(".menus li a").not($clicked).removeClass("active")
+            //     $clicked.toggleClass("active")
+            // })
+        })
+    </script>
+</body>
+
+</html>
