@@ -170,6 +170,7 @@ header {
     background-image: url(../images/about-photo.jpg);
     background-size: cover;
     position: relative;
+    margin-bottom: 150px;
 }
 .about-main.service-main {
     background-image: url(../images/service-photo.jpg);
@@ -212,7 +213,7 @@ header {
 
 /* Contact-page */
 .contact-details {
-    margin: 120px 0;
+    /* margin: 140px 0; */
 }
 .contact-text span {
     font-size: 18px;
@@ -220,7 +221,7 @@ header {
     position: relative;
     text-transform: uppercase;
 }
-.contact-details span::after {
+.contact-text span::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -229,13 +230,117 @@ header {
     height: 3px;
     background-color: #ffc700;
 }
-.contact-details h3 {
+.contact-text.form-text span {
+    position: relative;
+}
+.contact-text.form-text span::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+}
+.contact-text h3 {
     font-size: 45px;
     margin-top: 0px;
     margin-top: 10px;
     font-weight: 700;
 }
-.contact-details p {
+.contact-text p {
     font-size: 18px;
     color: #707070;
+}
+.atal-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center;
+}
+.address-box {
+    padding: 40px 30px;
+}
+.map-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+}
+.map-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #141414;
+    left: 0;
+    bottom: -3px;
+}
+.add {
+    margin-bottom: 10px;
+    margin-top: 14px;
+}
+.card {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .08);
+    border-radius: 6px;
+    overflow: hidden;
+    border: none;
+}
+.iframe {
+    padding: 0 20px;
+    margin-top: 150px;
+}
+.map iframe{
+    width: 100%;
+    height: 600px;
+}
+
+.form-box {
+    margin-top: -160px;
+    margin-bottom: 100px;
+}
+.detail-form {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 75px;
+}
+.input-box {
+    padding: 0px 25px;
+    border: 1px solid #e4e4e4;
+    color: #707070;
+    border-radius: 5px;
+}
+.input-box span {
+    font-size: 18px;
+}
+.input-box input {
+    color: #707070;
+    padding: 14px 5px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+}
+.input-box.textarea input{
+    width: calc(100% - 25px);
+} 
+.detail-form p {
+    color: #707070;
+}
+.get-btn.send-btn {
+    margin-left: auto;
+    padding: 14px 30px; 
+    background: rgb(15,18,45);
+    background: linear-gradient(90deg, rgba(15,18,45,1) 0%, rgba(63,63,70,1) 61%);
+    color: white;
+    position: relative;
+}
+.get-btn.get-btn.send-btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgb(251,187,28);
+    background: linear-gradient(90deg, rgba(251,187,28,0.8826550395548844) 0%, rgba(243,204,76,0.7762124625240722) 61%);
+}
+.get-btn.get-btn.send-btn:hover {
+    color: black;
+}
+.get-btn.get-btn.send-btn:hover:after {
+    width: 105%;
+    transform: skew(0deg);
+    left: 0px;
 }
