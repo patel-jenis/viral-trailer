@@ -212,9 +212,6 @@ header {
 }
 
 /* Contact-page */
-.contact-details {
-    /* margin: 140px 0; */
-}
 .contact-text span {
     font-size: 18px;
     font-weight: 600;
@@ -248,9 +245,12 @@ header {
     font-size: 18px;
     color: #707070;
 }
+.atal-img {
+    height: 100%;
+}
 .atal-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     object-position: center center;
 }
@@ -309,6 +309,7 @@ header {
     font-size: 18px;
 }
 .input-box input {
+    width: calc(100% - 25px);
     color: #707070;
     padding: 14px 5px;
     border: none;
@@ -343,4 +344,52 @@ header {
     width: 105%;
     transform: skew(0deg);
     left: 0px;
+}
+
+/* footer-main */
+.footer-main {
+    background-color: #141414;
+    padding: 70px 0;
+}
+.footer-main p {
+    color: #FFFFFF66;
+    font-size: 18px;
+}
+.rating-box {
+    border: 1px solid #ffffff1a;
+    border-radius: 4px;
+}
+.rating-box h2 {
+    padding: 5px 10px;
+    border-right: 1px solid #ffffff1a;
+    margin: 0;
+    text-align: center;
+    font-size: 52px;
+}
+.star-icon {
+    padding: 10px 0px;
+    text-align: center;
+}
+.star-icon span i{
+    color: #ffc700;
+}
+.star-icon p {
+    font-size: 18px;
+}
+.ml-90 {
+    margin-left: 90px;
+}
+.service-menu li a {
+    color: #FFFFFF66;
+    font-size: 18px;
+}
+.help p a {
+    color: #FFFFFF66;
+    font-size: 18px;
+}
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff1a;
+    margin-top: 50px;
 }
